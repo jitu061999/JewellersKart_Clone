@@ -7,6 +7,7 @@
         padding:10px 0;
         display: flex;
         flex-direction: column;
+         width: 84%;
     }
     
     .top-nav .a1{

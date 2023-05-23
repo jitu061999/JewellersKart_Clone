@@ -1,4 +1,7 @@
-@media only screen and (max-width: 768px) {
+
+
+
+@media only screen and (max-width: 780px) {
 
     .top-nav{
         background-color: #000;
@@ -7,6 +10,7 @@
         padding:10px 0;
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     
     .top-nav .a1{
@@ -56,11 +60,13 @@ p.rate{
 
 .header{
     margin-top: 102px;
+    margin-right: 71px;
+    width: 100%;
 }
 
 .navbar {
    
-    padding: 1rem 4.8rem;
+    padding: 1rem 3rem;
 }
     .nav-menu {
         position: fixed;
@@ -81,11 +87,22 @@ p.rate{
     }
 
     .nav-item {
-        margin: 1.0rem 0;
+        margin: 1rem 0;
+        margin-left: -50px;
     }
+
+    .nav-item a{
+        
+        margin-left: -50px;
+    }
+
+    
 .nav-menu{
+
+    margin: 0rem 1rem;
+    width: 87%;
     margin-top: 8rem;
-    margin-left:-1.2rem;
+    border: 2px solid #b6b6b6;
 }
     .nav-logo img{
         height:40px;
@@ -131,10 +148,11 @@ p.rate{
     }
 
     .hr-width{
-        height:770px;
-      margin-left: 117px;
+        width:-1%;
+        height:420px;
+      margin-left: 1px;
         padding-left: 20%;
-       margin-top: 4%;
+       margin-top: 20%;
         border-bottom: none;
         border-top:none;
         border-right:none;
@@ -159,12 +177,20 @@ p.rate{
         margin-left: 70px;
     }
 .arrow{
-        width: 0;
+      /*  width: 0;
         height: 0;
         border-top: 24px solid blue;
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;  
         margin-left: 107px;
+        */
+        margin-bottom: -70px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 24px solid blue;
+    border-bottom: 12px solid transparent;
+    margin-left: 3px;
       }
    
     @keyframes width-text {
@@ -261,7 +287,7 @@ p.rate{
     }
 
     .custo2 p{
-        margin:10px 20px;
+        margin:10px 15px;
         padding: 10px 19px;
     }
 
@@ -290,8 +316,16 @@ p.rate{
         width:100%;
         height:100%;
         margin-top: 10px;
-        
+        margin-right: 0px;
     }
+
+    
+.title1 img{
+    width:300px;
+    height:300px;
+    margin:20px 0;
+    transition: 0.3s all ease-in-out;
+}
 
     .title h1{
        font-size: 20px;
@@ -334,9 +368,9 @@ p.rate{
         padding-left: 0px;
     }
     
-    .Empower-img img{
-        width:100%;
-        height:100%;
+    .Empower-img img {
+        width: 70%;
+        height: 70%;
     }
     .container-benifit{
         margin-left: 0px;
@@ -466,19 +500,23 @@ p.rate{
     width:100%;
     height:100%;
     padding-left: 0;
-    margin:10px;
+    margin:4px 0;
     margin-bottom: 350px;
 }
 
 .our-blog-2 img{
     height:300px;
-    width:92%;
+    width:100%;
 }
 
     
 .our-blog-2 p{
     font-size:11px; 
     bottom:-285px;
+}
+
+.weddingbird{
+    padding: 0 14px;
 }
 
 input[type="email"]
@@ -491,6 +529,8 @@ input[type="email"]
 
 .custo-order-sec{
     flex-direction: column;
+    margin: 100px 0px;
+    padding: 0 50px;
 }
 
 .custo_order_secs{
@@ -505,10 +545,13 @@ input[type="email"]
     to {bottom: 0px;}
   }
 
+  /*
 .custo-order{
-    width:100%;
+    
    margin: 10px 30px;
 }
+
+*/
 
 .custo-order h3{
     text-align: center;
@@ -577,4 +620,33 @@ input[type="email"]
     }
 
 
+}
+
+
+@media only screen and (max-width: 388px){
+    
+    
+    .annouce1 {
+        height: 80px;
+        width: 80px;
+        padding: 27px;
+        margin-bottom: 386%;
+        margin-left: 38%;
+    }
+
+    .annouce3 {
+        height: 80px;
+        width: 80px;
+        padding: 27px;
+        margin-left: 38%;
+        margin-top: 170%;
+    }
+}
+
+
+@media only screen and (max-width: 508px) {
+    .Empower-img img {
+        width: 100%;
+        height: 100%;
+    }
 }

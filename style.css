@@ -117,7 +117,7 @@ a {
 
 .navbar {
     display: flex;
-    justify-content: start;
+   
     padding: 1rem 1rem;
 }
 
@@ -140,7 +140,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
 }
 
 .nav-item {
@@ -253,7 +252,7 @@ a {
 }
 
 @keyframes width-text {
-    from {left: -300px;}
+    from {left: -200px;}
     to {left: 0px;}
   }
 
@@ -315,13 +314,13 @@ a {
 
     .show{
         animation-name: about-text;
-        animation-duration: 2s;  
+        animation-duration: 3s;  
         animation-delay: 0s;
         
     }
     
     @keyframes about-text {
-        from {left: -300px;}
+        from {left: -200px;}
         to {left: 0px;}
       }
 
@@ -335,13 +334,13 @@ a {
 
     position: relative;
     animation-name: video-text;
-    animation-duration: 2s;  
+    animation-duration: 3s;  
     animation-delay: 0s;
     
 }
 
 @keyframes video-text {
-    from {right: -300px;}
+    from {right: -200px;}
     to {right: 0px;}
   }
 
@@ -378,6 +377,10 @@ a {
     padding-top: 10px;
     font-size: 20px;
     margin:40px 0;
+}
+
+.custo2 p:hover{
+    cursor: pointer;
 }
 .custo3{
     width:40%;
@@ -443,13 +446,9 @@ a {
     width:300px;
     height:300px;
     margin:20px;
-}
-
-.title1 img{
-    width:300px;
-    height:300px;
     transition: 0.3s all ease-in-out;
 }
+
 
 .title1 img:hover{
     transform: scale(1.1);

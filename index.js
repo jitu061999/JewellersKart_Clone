@@ -85,102 +85,138 @@ empower_img.forEach((e1) => bottom_animate.observe(e1));
 
 
 
-
-
-
 function customize() {
     const num = Math.floor(Math.random() * 4) + 1;
-
-    var col1=document.querySelector(".custo2 .p1");
-    var col2=document.querySelector(".custo2 .p2");
-    var col3=document.querySelector(".custo2 .p3");
-    var col4=document.querySelector(".custo2 .p4");
     if (num == 1) {
-
-
-        col2.style.backgroundColor="gray";
-        col2.style.color = "black";
-        col3.style.backgroundColor="gray";
-        col3.style.color = "black";
-        col4.style.backgroundColor="gray";
-        col4.style.color = "black";
-
-        col1.style.backgroundColor="blue";
-        col1.style.color = "white";
-        document.querySelector(".custo1 img").setAttribute("src","images/custo-img1.jpg");
-        document.querySelector(".custo3 h1").innerHTML = "Upload Your Design";
-        document.querySelector(".custo3 p").innerHTML = "<p>To build a customized Jewelry piece, upload the design along with the extact specifications asked. After filling in all the details move on to the next step. </p>";
+        click1();
     }
     else if (num === 2) {
-        col1.style.backgroundColor="gray";
-        col1.style.color = "black";
-        col3.style.backgroundColor="gray";
-        col3.style.color = "black";
-        col4.style.backgroundColor="gray";
-        col4.style.color = "black";
-
-        col2.style.backgroundColor="blue";
-        col2.style.color = "white";
-        document.querySelector(".custo1 img").setAttribute("src","images/custo-img2.jpg");
-        document.querySelector(".custo3 h1").innerHTML = "Customised Jewellery";
-        document.querySelector(".custo3 p").innerHTML = "<p>After getting all the details from you, we will prepare the digital format of your Jewelry piece for you to view and verify the specifications provided by you. You will be shared with the estimated cost of your Jewellery piece at this point.</p>";
+        click2();
     }
 
     else if (num === 3) {
-        col1.style.backgroundColor="gray";
-        col1.style.color = "black";
-        col2.style.backgroundColor="gray";
-        col2.style.color = "black";
-        col4.style.backgroundColor="gray";
-        col4.style.color = "black";
-        
-        col3.style.backgroundColor="blue";
-        col3.style.color = "white";
-        document.querySelector(".custo1 img").setAttribute("src","images/custo-img3.jpg");
-        document.querySelector(".custo3 h1").innerHTML = "Design & manufacture";
-        document.querySelector(".custo3 p").innerHTML = "<p>Once wew get all the confirmations from you regarding the design and specifications. We will wait for the token amount to be received. Once the token amount is received, we will start the Jewelry Making process.</p>";
+        click3();
     }
- else{
-    col1.style.backgroundColor="gray";
-    col1.style.color = "black";
-    col2.style.backgroundColor="gray";
-    col2.style.color = "black";
-    col3.style.backgroundColor="gray";
-    col3.style.color = "black";
-        col4.style.backgroundColor="blue";
-        col4.style.color = "white";
-        document.querySelector(".custo1 img").setAttribute("src","images/custo-img4.jpg");
-        document.querySelector(".custo3 h1").innerHTML = "Get It Delivered";
-        document.querySelector(".custo3 p").innerHTML = "<p>Once your Jewellry is fully ready, we will be waiting for any type of outstanding. After checking and performing the QCs, we will get Your Jewellery piece delivered to your desired address.</p>";
+    else {
+        click4();
     }
-setTimeout(customize, 2000);
-    
+    setTimeout(customize, 4000);
+
 }
 
 customize();
 
+function click1() {
+    var col1 = document.querySelector(".custo2 .p1");
+    var col2 = document.querySelector(".custo2 .p2");
+    var col3 = document.querySelector(".custo2 .p3");
+    var col4 = document.querySelector(".custo2 .p4");
+
+    col2.style.backgroundColor = "gray";
+    col2.style.color = "black";
+    col3.style.backgroundColor = "gray";
+    col3.style.color = "black";
+    col4.style.backgroundColor = "gray";
+    col4.style.color = "black";
+
+    col1.style.backgroundColor = "blue";
+    col1.style.color = "white";
+    document.querySelector(".custo1 img").setAttribute("src", "images/custo-img1.jpg");
+    document.querySelector(".custo3 h1").innerHTML = "Upload Your Design";
+    document.querySelector(".custo3 p").innerHTML = "<p>To build a customized Jewelry piece, upload the design along with the extact specifications asked. After filling in all the details move on to the next step. </p>";
+
+}
+
+function click2() {
+    var col1 = document.querySelector(".custo2 .p1");
+    var col2 = document.querySelector(".custo2 .p2");
+    var col3 = document.querySelector(".custo2 .p3");
+    var col4 = document.querySelector(".custo2 .p4");
+
+    col1.style.backgroundColor = "gray";
+    col1.style.color = "black";
+    col3.style.backgroundColor = "gray";
+    col3.style.color = "black";
+    col4.style.backgroundColor = "gray";
+    col4.style.color = "black";
+
+    col2.style.backgroundColor = "blue";
+    col2.style.color = "white";
+    document.querySelector(".custo1 img").setAttribute("src", "images/custo-img2.jpg");
+    document.querySelector(".custo3 h1").innerHTML = "Customised Jewellery";
+    document.querySelector(".custo3 p").innerHTML = "<p>After getting all the details from you, we will prepare the digital format of your Jewelry piece for you to view and verify the specifications provided by you. You will be shared with the estimated cost of your Jewellery piece at this point.</p>";
+
+}
+
+function click3() {
+    var col1 = document.querySelector(".custo2 .p1");
+    var col2 = document.querySelector(".custo2 .p2");
+    var col3 = document.querySelector(".custo2 .p3");
+    var col4 = document.querySelector(".custo2 .p4");
+
+    col1.style.backgroundColor = "gray";
+    col1.style.color = "black";
+    col2.style.backgroundColor = "gray";
+    col2.style.color = "black";
+    col4.style.backgroundColor = "gray";
+    col4.style.color = "black";
+
+    col3.style.backgroundColor = "blue";
+    col3.style.color = "white";
+    document.querySelector(".custo1 img").setAttribute("src", "images/custo-img3.jpg");
+    document.querySelector(".custo3 h1").innerHTML = "Design & manufacture";
+    document.querySelector(".custo3 p").innerHTML = "<p>Once wew get all the confirmations from you regarding the design and specifications. We will wait for the token amount to be received. Once the token amount is received, we will start the Jewelry Making process.</p>";
+
+}
 
 
-       
+function click4() {
+    var col1 = document.querySelector(".custo2 .p1");
+    var col2 = document.querySelector(".custo2 .p2");
+    var col3 = document.querySelector(".custo2 .p3");
+    var col4 = document.querySelector(".custo2 .p4");
 
-function testimonials(){
+    col1.style.backgroundColor = "gray";
+    col1.style.color = "black";
+    col2.style.backgroundColor = "gray";
+    col2.style.color = "black";
+    col3.style.backgroundColor = "gray";
+    col3.style.color = "black";
+    col4.style.backgroundColor = "blue";
+    col4.style.color = "white";
+    document.querySelector(".custo1 img").setAttribute("src", "images/custo-img4.jpg");
+    document.querySelector(".custo3 h1").innerHTML = "Get It Delivered";
+    document.querySelector(".custo3 p").innerHTML = "<p>Once your Jewellry is fully ready, we will be waiting for any type of outstanding. After checking and performing the QCs, we will get Your Jewellery piece delivered to your desired address.</p>";
+
+}
+
+
+
+
+
+
+
+
+
+
+function testimonials() {
     const num = Math.floor(Math.random() * 3) + 1;
 
-    if(num===1){
+    if (num === 1) {
         document.querySelector(".our-testimonials-para p").innerHTML = "<p>I Partnered with the Jewellerskart team for a social media management proposal a month bac.</p>";
         document.querySelector(".our-testimonials-para .pt-3").innerHTML = "<p>-Meet Parmar</p>";
-        document.querySelector(".testimonials-img img").setAttribute("src","images/our-testimonials1.png");
-        
+        document.querySelector(".testimonials-img img").setAttribute("src", "images/our-testimonials1.png");
+
     }
-    else if(num===2){
+    else if (num === 2) {
         document.querySelector(".our-testimonials-para p").innerHTML = "<p>Jewellerkart has come out with a unique idea of introducing a website to the Jewellery re.</p>";
         document.querySelector(".our-testimonials-para .pt-3").innerHTML = "<p>-Viki Jewellery</p>";
-        document.querySelector(".testimonials-img img").setAttribute("src","images/our-testimonials2.png");
+        document.querySelector(".testimonials-img img").setAttribute("src", "images/our-testimonials2.png");
     }
-    else{
+    else {
         document.querySelector(".our-testimonials-para p").innerHTML = "<p>I wanted a customized website for my jewellery shop. I was in a long search of someone tha.</p>";
         document.querySelector(".our-testimonials-para .pt-3").innerHTML = "<p>-Khusboo Kumari</p>";
-        document.querySelector(".testimonials-img img").setAttribute("src","images/our-testimonials3.png");
+        document.querySelector(".testimonials-img img").setAttribute("src", "images/our-testimonials3.png");
     }
     setTimeout(testimonials, 2000);
 
